@@ -5,12 +5,12 @@ def PrimeList(N):
     for i in range(2, num):
         if num % i == 0:
             is_prime = False
-    break
+            break
         if is_prime:
             primes.append(str(num))
     return " ".join(primes)
-n = int(input("请输入正整数 N: "))
-result = PrimeList(n)
-print(result)
+if __name__==" __main__":
+    n = int(input("请输入正整数 N: "))
+    result = PrimeList(n)
 
     
